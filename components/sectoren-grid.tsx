@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import Link from "next/link"
-import { ArrowRight, Building, Car, GraduationCap, Heart, Factory, Bank, ShoppingBag, Zap, Users, Government } from "lucide-react"
+import { ArrowRight, Building, Car, GraduationCap, Heart, Factory, ShoppingBag, Zap, Users, } from "lucide-react"
 
 const sectoren = [
   {
@@ -32,7 +32,6 @@ const sectoren = [
   {
     titel: "Financiële sector",
     beschrijving: "Digitale innovatie voor financiële dienstverleners",
-    icon: Bank,
     href: "/wat-we-doen/sectoren/financiele-sector"
   },
   {
@@ -56,7 +55,6 @@ const sectoren = [
   {
     titel: "Overheid",
     beschrijving: "Digitale dienstverlening voor overheidsinstellingen",
-    icon: Government,
     href: "/wat-we-doen/sectoren/overheid"
   }
 ]
@@ -80,7 +78,6 @@ export function SectorenGrid() {
                   href={sector.href}
                   className="group flex h-full flex-col rounded-lg border border-border p-6 transition-all hover:border-primary hover:bg-primary/5"
                 >
-                  <Icon className="mb-4 h-8 w-8 text-primary" />
                   <h3 className="mb-2 text-xl font-medium">{sector.titel}</h3>
                   <p className="mb-4 flex-grow text-muted-foreground">{sector.beschrijving}</p>
                   <div className="flex items-center gap-2 text-sm font-medium text-primary">
