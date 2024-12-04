@@ -43,7 +43,7 @@ export function Solutions() {
       <div className="mx-auto max-w-[1800px] px-10">
         <div className="grid gap-12 lg:grid-cols-2">
           {/* Left Column */}
-          <div className="sticky top-32 h-fit">
+          <div className="lg:sticky lg:top-32 h-fit">
             <motion.span
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}

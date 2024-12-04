@@ -1,38 +1,38 @@
 "use client"
 
-import { useEffect, useRef } from 'react'
-import { motion } from 'framer-motion'
-import { ArrowDown } from 'lucide-react'
-import { cn } from '@/lib/utils'
+import { useEffect, useRef } from "react"
+import { motion } from "framer-motion"
+import { ArrowDown } from "lucide-react"
+import { cn } from "@/lib/utils"
 
 const services = [
   {
-    title: "Strategy",
-    description: "Digital transformation roadmaps that drive success"
+    title: "Strategie",
+    description: "Digitale transformatiestrategieën die succes stimuleren",
   },
   {
-    title: "Technology",
-    description: "Innovative solutions built for the modern web"
+    title: "Technologie",
+    description: "Innovatieve oplossingen gebouwd voor het moderne web",
   },
   {
     title: "Marketing",
-    description: "Data-driven campaigns that deliver results"
+    description: "Datagestuurde campagnes die resultaat leveren",
   },
   {
     title: "Design",
-    description: "Creative experiences that inspire and engage"
-  }
+    description: "Creatieve ervaringen die inspireren en boeien",
+  },
 ]
 
-export function Experience() {
-  const words = [
-    "Make every customer interaction",
-    "powerful.",
+export function Experience(): JSX.Element {
+  const words: string[] = [
+    "Maak elke klantinteractie",
+    "krachtig.",
   ]
 
   return (
     <section className="relative min-h-screen bg-black">
-      {/* Animated Grid Lines */}
+      {/* Geanimeerde rasterlijnen */}
       <div className="absolute inset-0 overflow-hidden">
         {Array.from({ length: 20 }).map((_, i) => (
           <motion.div
@@ -56,11 +56,11 @@ export function Experience() {
         ))}
       </div>
 
-      {/* Content */}
+      {/* Inhoud */}
       <div className="relative z-10">
         <div className="mx-auto max-w-[1800px] px-10">
           <div className="flex min-h-screen flex-col items-start justify-center">
-            {/* Service Boxes */}
+            {/* Dienstvakken */}
             <div className="mb-24 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {services.map((service, index) => (
                 <motion.div
@@ -76,7 +76,7 @@ export function Experience() {
               ))}
             </div>
 
-            {/* Main Text */}
+            {/* Hoofdtekst */}
             <div className="mb-12">
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -84,7 +84,7 @@ export function Experience() {
                 transition={{ duration: 0.8 }}
                 className="mb-4 text-xl italic text-white/80"
               >
-                Experience is everything
+                Ervaring maakt het verschil
               </motion.p>
 
               <div className="overflow-hidden">
@@ -105,24 +105,24 @@ export function Experience() {
               </div>
             </div>
 
-            {/* Description */}
+            {/* Beschrijving */}
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
               className="mb-12 max-w-3xl text-lg text-white/60"
             >
-              Transform your brand and business with exceptional digital experiences that drive growth and innovation. Our team of experts delivers cutting-edge solutions that keep you ahead of the competition.
+              Transformeer je merk en bedrijf met uitzonderlijke digitale ervaringen die groei en innovatie stimuleren. Ons team van experts levert geavanceerde oplossingen die je een voorsprong geven op de concurrentie.
             </motion.p>
 
-            {/* Button */}
+            {/* Knop */}
             <motion.button
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
               className="group flex items-center gap-2 rounded-full bg-[#1e7932] px-6 py-3 text-white transition-all hover:bg-[#1e7932]/90"
             >
-              <span>Discover our solutions</span>
+              <span>Ontdek onze oplossingen</span>
               <ArrowDown className="h-4 w-4 transition-transform group-hover:translate-y-1" />
             </motion.button>
           </div>

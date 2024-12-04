@@ -43,6 +43,7 @@
     "aceternity-ui": "^0.0.1",
     "autoprefixer": "^10.4.17",
     "class-variance-authority": "^0.7.0",
+    "cloudinary": "^2.5.1",
     "clsx": "^2.1.0",
     "cmdk": "^0.2.1",
     "date-fns": "^3.3.1",
